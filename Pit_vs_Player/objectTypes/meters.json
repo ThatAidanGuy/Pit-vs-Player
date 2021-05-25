@@ -1,0 +1,16 @@
+{
+	"name": "Meters",
+	"plugin-id": "Text",
+	"sid": 652023592623840,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "Points",
+			"type": "number",
+			"desc": "Number of points",
+			"sid": 573715685062083
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": []
+}

@@ -1,0 +1,1008 @@
+{
+	"name": "Event sheet 1",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 327728217287343,
+					"parameters": {
+						"key": 65
+					}
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "Runner",
+					"sid": 262761461041916,
+					"parameters": {
+						"instance-variable": "Alive"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "move-forward",
+					"objectClass": "Runner",
+					"sid": 221949053135490,
+					"parameters": {
+						"distance": "-5"
+					}
+				},
+				{
+					"id": "move-forward",
+					"objectClass": "Runner_Fallpoint",
+					"sid": 789293714828077,
+					"parameters": {
+						"distance": "-5"
+					}
+				}
+			],
+			"sid": 274275940455146
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 329954022498714,
+					"parameters": {
+						"key": 68
+					}
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "Runner",
+					"sid": 593350598107563,
+					"parameters": {
+						"instance-variable": "Alive"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "move-forward",
+					"objectClass": "Runner",
+					"sid": 158923085139715,
+					"parameters": {
+						"distance": "5"
+					}
+				},
+				{
+					"id": "move-forward",
+					"objectClass": "Runner_Fallpoint",
+					"sid": 745994678145533,
+					"parameters": {
+						"distance": "5"
+					}
+				}
+			],
+			"sid": 975150567076267
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 863625499527149,
+					"parameters": {
+						"key": 87
+					}
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "Runner",
+					"sid": 643731691866136,
+					"parameters": {
+						"instance-variable": "Alive"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "simulate-control",
+					"objectClass": "Runner",
+					"sid": 410214835083348,
+					"behaviorType": "Platform",
+					"parameters": {
+						"control": "jump"
+					}
+				}
+			],
+			"sid": 352066749831457
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 838796677374879,
+					"parameters": {
+						"key": 37
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "subtract-from-instvar",
+					"objectClass": "Arrow",
+					"sid": 922138766127652,
+					"parameters": {
+						"instance-variable": "Pit_Num",
+						"value": "1"
+					}
+				},
+				{
+					"id": "move-forward",
+					"objectClass": "Arrow",
+					"sid": 699501029564978,
+					"parameters": {
+						"distance": "-240"
+					}
+				}
+			],
+			"sid": 679772298599457
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 575614973597843,
+					"parameters": {
+						"key": 39
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-instvar",
+					"objectClass": "Arrow",
+					"sid": 141127840979394,
+					"parameters": {
+						"instance-variable": "Pit_Num",
+						"value": "1"
+					}
+				},
+				{
+					"id": "move-forward",
+					"objectClass": "Arrow",
+					"sid": 833285217192873,
+					"parameters": {
+						"distance": "240"
+					}
+				}
+			],
+			"sid": 974958994601704
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 857530123598715,
+					"parameters": {
+						"key": 38
+					}
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Arrow",
+					"sid": 941582882974442,
+					"parameters": {
+						"instance-variable": "Pit_Num",
+						"comparison": 0,
+						"value": "0"
+					}
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "Large_Pit",
+					"sid": 828728660097271,
+					"parameters": {
+						"instance-variable": "Hazardous"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "move-to-object",
+					"objectClass": "Large_Pit",
+					"sid": 279332558881669,
+					"behaviorType": "MoveTo",
+					"parameters": {
+						"object": "Roulette",
+						"image-point": "0",
+						"mode": "direct"
+					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "Large_Pit",
+					"sid": 389599745881914,
+					"parameters": {
+						"instance-variable": "Hazardous",
+						"value": "true"
+					}
+				}
+			],
+			"sid": 488465868654164
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 493465593128037,
+					"parameters": {
+						"key": 38
+					}
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Arrow",
+					"sid": 165635621156535,
+					"parameters": {
+						"instance-variable": "Pit_Num",
+						"comparison": 0,
+						"value": "1"
+					}
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "Med_Pit",
+					"sid": 355191653946667,
+					"parameters": {
+						"instance-variable": "Hazardous"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "move-to-object",
+					"objectClass": "Med_Pit",
+					"sid": 503331583118300,
+					"behaviorType": "MoveTo",
+					"parameters": {
+						"object": "Roulette",
+						"image-point": "0",
+						"mode": "direct"
+					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "Med_Pit",
+					"sid": 730444241949888,
+					"parameters": {
+						"instance-variable": "Hazardous",
+						"value": "true"
+					}
+				}
+			],
+			"sid": 614352719316882
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 769066437976603,
+					"parameters": {
+						"key": 38
+					}
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Arrow",
+					"sid": 431085667127428,
+					"parameters": {
+						"instance-variable": "Pit_Num",
+						"comparison": 0,
+						"value": "2"
+					}
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "Small_Pit",
+					"sid": 288799691467924,
+					"parameters": {
+						"instance-variable": "Hazardous"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "move-to-object",
+					"objectClass": "Small_Pit",
+					"sid": 493714809625747,
+					"behaviorType": "MoveTo",
+					"parameters": {
+						"object": "Roulette",
+						"image-point": "0",
+						"mode": "direct"
+					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "Small_Pit",
+					"sid": 155317823458989,
+					"parameters": {
+						"instance-variable": "Hazardous",
+						"value": "true"
+					}
+				}
+			],
+			"sid": 690298818007419
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "Roulette",
+					"sid": 363344689844480,
+					"parameters": {
+						"instance-variable": "moving_left"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "move-to-object",
+					"objectClass": "Roulette",
+					"sid": 499307879320092,
+					"behaviorType": "MoveTo",
+					"parameters": {
+						"object": "Rou_Left",
+						"image-point": "0",
+						"mode": "direct"
+					}
+				}
+			],
+			"sid": 137382284334425
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "Roulette",
+					"sid": 524952312728412,
+					"parameters": {
+						"instance-variable": "moving_left"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "move-to-object",
+					"objectClass": "Roulette",
+					"sid": 466590399982333,
+					"behaviorType": "MoveTo",
+					"parameters": {
+						"object": "Rou_Right",
+						"image-point": "0",
+						"mode": "direct"
+					}
+				}
+			],
+			"sid": 444816728228002
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Roulette",
+					"sid": 774209382072437,
+					"parameters": {
+						"object": "Rou_Left"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "Roulette",
+					"sid": 324343907611997,
+					"parameters": {
+						"instance-variable": "moving_left",
+						"value": "false"
+					}
+				}
+			],
+			"sid": 841984406731985
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Roulette",
+					"sid": 933259895885203,
+					"parameters": {
+						"object": "Rou_Right"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "Roulette",
+					"sid": 432160746295715,
+					"parameters": {
+						"instance-variable": "moving_left",
+						"value": "true"
+					}
+				}
+			],
+			"sid": 433573482829357
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Runner",
+					"sid": 239532305816461,
+					"parameters": {
+						"object": "Large_Pit"
+					}
+				},
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Runner",
+					"sid": 839684063301802,
+					"parameters": {
+						"object": "Med_Pit"
+					}
+				},
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Runner",
+					"sid": 382451103778345,
+					"parameters": {
+						"object": "Small_Pit"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "Runner",
+					"sid": 177675411288786,
+					"parameters": {
+						"instance-variable": "Alive",
+						"value": "false"
+					}
+				}
+			],
+			"sid": 829112577587506,
+			"isOrBlock": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "Runner",
+					"sid": 854156677418706,
+					"parameters": {
+						"instance-variable": "Alive"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "move-to-object",
+					"objectClass": "Runner",
+					"sid": 387914914372505,
+					"behaviorType": "MoveTo",
+					"parameters": {
+						"object": "Runner_Fallpoint",
+						"image-point": "0",
+						"mode": "direct"
+					}
+				},
+				{
+					"id": "set-collisions-enabled",
+					"objectClass": "Runner",
+					"sid": 923297578211373,
+					"parameters": {
+						"collisions": "disabled"
+					}
+				}
+			],
+			"sid": 530206356153167
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-y",
+					"objectClass": "Runner",
+					"sid": 329297027326472,
+					"parameters": {
+						"comparison": 5,
+						"y-co-ordinate": "420"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "Runner",
+					"sid": 483878468482292,
+					"parameters": {
+						"instance-variable": "Alive",
+						"value": "true"
+					}
+				},
+				{
+					"id": "set-x",
+					"objectClass": "Runner",
+					"sid": 769989002769882,
+					"parameters": {
+						"x": "38"
+					}
+				},
+				{
+					"id": "set-y",
+					"objectClass": "Runner",
+					"sid": 185053757137918,
+					"parameters": {
+						"y": "193"
+					}
+				},
+				{
+					"id": "set-collisions-enabled",
+					"objectClass": "Runner",
+					"sid": 400508004799251,
+					"parameters": {
+						"collisions": "enabled"
+					}
+				},
+				{
+					"id": "stop",
+					"objectClass": "Runner",
+					"sid": 932336921263741,
+					"behaviorType": "MoveTo"
+				},
+				{
+					"id": "set-x",
+					"objectClass": "Runner_Fallpoint",
+					"sid": 686523616494747,
+					"parameters": {
+						"x": "38"
+					}
+				},
+				{
+					"id": "add-to-instvar",
+					"objectClass": "Pit_Val",
+					"sid": 595312827388766,
+					"parameters": {
+						"instance-variable": "Points",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "Pit_Val",
+					"sid": 781007741879364,
+					"parameters": {
+						"text": "Pit_Val.Points"
+					}
+				}
+			],
+			"sid": 818505295258823
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Arrow",
+					"sid": 353603443561432,
+					"parameters": {
+						"instance-variable": "Pit_Num",
+						"comparison": 0,
+						"value": "-1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-instvar-value",
+					"objectClass": "Arrow",
+					"sid": 216484526271835,
+					"parameters": {
+						"instance-variable": "Pit_Num",
+						"value": "2"
+					}
+				}
+			],
+			"sid": 582971461904955
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Arrow",
+					"sid": 837858795598366,
+					"parameters": {
+						"instance-variable": "Pit_Num",
+						"comparison": 0,
+						"value": "3"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-instvar-value",
+					"objectClass": "Arrow",
+					"sid": 216612893928028,
+					"parameters": {
+						"instance-variable": "Pit_Num",
+						"value": "0"
+					}
+				}
+			],
+			"sid": 120226817871667
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-x",
+					"objectClass": "Arrow",
+					"sid": 799375556750104,
+					"parameters": {
+						"comparison": 2,
+						"x-co-ordinate": "260"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-x",
+					"objectClass": "Arrow",
+					"sid": 106081268761777,
+					"parameters": {
+						"x": "740"
+					}
+				}
+			],
+			"sid": 548710813756304
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-x",
+					"objectClass": "Arrow",
+					"sid": 981651493657872,
+					"parameters": {
+						"comparison": 4,
+						"x-co-ordinate": "740"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-x",
+					"objectClass": "Arrow",
+					"sid": 721030894738854,
+					"parameters": {
+						"x": "260"
+					}
+				}
+			],
+			"sid": 324818999197385
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "Large_Pit",
+					"sid": 156158147993188,
+					"parameters": {
+						"instance-variable": "Hazardous"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "move-forward",
+					"objectClass": "Large_Pit",
+					"sid": 832066770256585,
+					"parameters": {
+						"distance": "-3"
+					}
+				}
+			],
+			"sid": 774168342779808
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "Med_Pit",
+					"sid": 990469950081943,
+					"parameters": {
+						"instance-variable": "Hazardous"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "move-forward",
+					"objectClass": "Med_Pit",
+					"sid": 377822137447659,
+					"parameters": {
+						"distance": "-2"
+					}
+				}
+			],
+			"sid": 927955611064218
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "Small_Pit",
+					"sid": 933555556463482,
+					"parameters": {
+						"instance-variable": "Hazardous"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "move-forward",
+					"objectClass": "Small_Pit",
+					"sid": 895987228952755,
+					"parameters": {
+						"distance": "-1"
+					}
+				}
+			],
+			"sid": 563233743804218
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-x",
+					"objectClass": "Large_Pit",
+					"sid": 670632705651781,
+					"parameters": {
+						"comparison": 3,
+						"x-co-ordinate": "-200"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "Large_Pit",
+					"sid": 544652887146449,
+					"parameters": {
+						"instance-variable": "Hazardous",
+						"value": "false"
+					}
+				},
+				{
+					"id": "set-x",
+					"objectClass": "Large_Pit",
+					"sid": 986163919131955,
+					"parameters": {
+						"x": "109"
+					}
+				},
+				{
+					"id": "set-y",
+					"objectClass": "Large_Pit",
+					"sid": 758965864741521,
+					"parameters": {
+						"y": "403"
+					}
+				},
+				{
+					"id": "stop",
+					"objectClass": "Large_Pit",
+					"sid": 709743313638903,
+					"behaviorType": "MoveTo"
+				}
+			],
+			"sid": 710633103051772
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-x",
+					"objectClass": "Med_Pit",
+					"sid": 262759357329069,
+					"parameters": {
+						"comparison": 3,
+						"x-co-ordinate": "-100"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "Med_Pit",
+					"sid": 625162502125590,
+					"parameters": {
+						"instance-variable": "Hazardous",
+						"value": "false"
+					}
+				},
+				{
+					"id": "set-x",
+					"objectClass": "Med_Pit",
+					"sid": 536178665972410,
+					"parameters": {
+						"x": "381"
+					}
+				},
+				{
+					"id": "set-y",
+					"objectClass": "Med_Pit",
+					"sid": 196911100885739,
+					"parameters": {
+						"y": "403"
+					}
+				},
+				{
+					"id": "stop",
+					"objectClass": "Med_Pit",
+					"sid": 600156348171660,
+					"behaviorType": "MoveTo"
+				}
+			],
+			"sid": 227246439378058
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-x",
+					"objectClass": "Small_Pit",
+					"sid": 565574084525485,
+					"parameters": {
+						"comparison": 3,
+						"x-co-ordinate": "-50"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "Small_Pit",
+					"sid": 766048003043023,
+					"parameters": {
+						"instance-variable": "Hazardous",
+						"value": "false"
+					}
+				},
+				{
+					"id": "set-x",
+					"objectClass": "Small_Pit",
+					"sid": 997579731480367,
+					"parameters": {
+						"x": "616"
+					}
+				},
+				{
+					"id": "set-y",
+					"objectClass": "Small_Pit",
+					"sid": 107299493076703,
+					"parameters": {
+						"y": "403"
+					}
+				},
+				{
+					"id": "stop",
+					"objectClass": "Small_Pit",
+					"sid": 331308042182656,
+					"behaviorType": "MoveTo"
+				}
+			],
+			"sid": 346895992909800
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 693516463101234
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-instvar",
+					"objectClass": "Meters_Val",
+					"sid": 144904453921018,
+					"parameters": {
+						"instance-variable": "Meters",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "Meters_Val",
+					"sid": 642441948922926,
+					"parameters": {
+						"text": "Meters_Val.Meters"
+					}
+				}
+			],
+			"sid": 570788502727537
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Meters_Val",
+					"sid": 896522084074326,
+					"parameters": {
+						"instance-variable": "Meters",
+						"comparison": 0,
+						"value": "500"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-instvar",
+					"objectClass": "Runner_Val",
+					"sid": 600891543182762,
+					"parameters": {
+						"instance-variable": "Points",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "Runner_Val",
+					"sid": 794444725533067,
+					"parameters": {
+						"text": "Runner_Val.Points"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "Meters_Val",
+					"sid": 130660458092222,
+					"parameters": {
+						"instance-variable": "Meters",
+						"value": "0"
+					}
+				}
+			],
+			"sid": 105851104520083
+		}
+	],
+	"sid": 472193582172572
+}

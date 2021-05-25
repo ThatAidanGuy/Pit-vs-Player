@@ -1,0 +1,72 @@
+{
+	"name": "Runner",
+	"plugin-id": "Sprite",
+	"sid": 398929012450459,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "Alive",
+			"type": "boolean",
+			"desc": "If true, the runner is alive, if not, they fall down, pit gets a point, then runner is alive again.",
+			"sid": 582472224079635
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Platform",
+			"name": "Platform",
+			"sid": 494121423198536
+		},
+		{
+			"behaviorId": "bound",
+			"name": "BoundToLayout",
+			"sid": 748842288956911
+		},
+		{
+			"behaviorId": "MoveTo",
+			"name": "MoveTo",
+			"sid": 963581974896783
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 259,
+						"height": 287,
+						"originX": 0.5,
+						"originY": 0.4738675958188153,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4721944,
+						"collisionPoly": {
+							"points": [
+								0.5,
+								0.21518319079294693,
+								0.8463453761994661,
+								0.21518319079294693,
+								0.8794004088121735,
+								0.9951412445413136,
+								0.09141494435612084,
+								0.9938760426565305
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 958668953554404,
+				"name": "Animation 2",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

@@ -1,0 +1,16 @@
+{
+	"name": "Runner_Points",
+	"plugin-id": "Text",
+	"sid": 867650495481693,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "Points",
+			"type": "number",
+			"desc": "Number of points",
+			"sid": 977939045277258
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": []
+}

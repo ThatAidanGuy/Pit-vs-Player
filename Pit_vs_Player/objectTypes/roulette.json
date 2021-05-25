@@ -1,0 +1,50 @@
+{
+	"name": "Roulette",
+	"plugin-id": "Sprite",
+	"sid": 435041716639326,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "moving_left",
+			"type": "boolean",
+			"desc": "If true, the roulette moves left, if false, it moves right.",
+			"sid": 895467636881252
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "MoveTo",
+			"name": "MoveTo",
+			"sid": 117810929430401
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 250,
+						"height": 250,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9363206,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 692360047886263,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

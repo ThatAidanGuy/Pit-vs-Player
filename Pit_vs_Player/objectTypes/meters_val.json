@@ -1,0 +1,16 @@
+{
+	"name": "Meters_Val",
+	"plugin-id": "Text",
+	"sid": 296886112609062,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "Meters",
+			"type": "number",
+			"desc": "Number of meters",
+			"sid": 645672419254654
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": []
+}

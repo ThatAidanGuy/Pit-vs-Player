@@ -1,0 +1,62 @@
+{
+	"name": "Small_Pit",
+	"plugin-id": "Sprite",
+	"sid": 372301467963285,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "Hazardous",
+			"type": "boolean",
+			"desc": "When pit is sent on ground, this is true.",
+			"sid": 151499226930978
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "MoveTo",
+			"name": "MoveTo",
+			"sid": 821174332750862
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 200,
+						"height": 300,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4734279,
+						"collisionPoly": {
+							"points": [
+								0.25,
+								0,
+								0.75,
+								0,
+								0.75,
+								0.8292047543927428,
+								0.25,
+								0.8260073260073261
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 272189603412437,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

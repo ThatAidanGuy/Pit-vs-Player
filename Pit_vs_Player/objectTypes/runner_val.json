@@ -1,0 +1,16 @@
+{
+	"name": "Runner_Val",
+	"plugin-id": "Text",
+	"sid": 282896754958601,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "Points",
+			"type": "number",
+			"desc": "Runner's points",
+			"sid": 488463006356550
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": []
+}

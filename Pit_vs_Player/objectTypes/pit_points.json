@@ -1,0 +1,16 @@
+{
+	"name": "Pit_Points",
+	"plugin-id": "Text",
+	"sid": 230468726090229,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "Points",
+			"type": "number",
+			"desc": "Number of points",
+			"sid": 663557710057590
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": []
+}

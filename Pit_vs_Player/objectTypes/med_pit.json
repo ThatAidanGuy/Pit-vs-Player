@@ -1,0 +1,62 @@
+{
+	"name": "Med_Pit",
+	"plugin-id": "Sprite",
+	"sid": 393071049922034,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "Hazardous",
+			"type": "boolean",
+			"desc": "When pit is sent on ground, this is true.",
+			"sid": 532095468126038
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "MoveTo",
+			"name": "MoveTo",
+			"sid": 165503953354047
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 300,
+						"height": 300,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5314727,
+						"collisionPoly": {
+							"points": [
+								0.25,
+								0.0034151204427083333,
+								0.75,
+								0,
+								0.75,
+								0.8260073260073261,
+								0.25,
+								0.8260073260073261
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 901782666444234,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}
